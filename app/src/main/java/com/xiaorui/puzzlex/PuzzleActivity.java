@@ -44,6 +44,7 @@ import android.view.MenuItem;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TableLayout;
+import android.widget.TextView;
 
 /**
  * This is the primary @class Activity for the PhotoGaffe application.  It
@@ -78,7 +79,8 @@ public final class PuzzleActivity extends Activity {
    private int boardWidth;
    private int boardHeight;
    private int boardSZ;
-   
+   public static TextView mCounter;
+
    private boolean numbersVisible = false; // Whether a title is displayed that
                                   // shows the correct location of the
                                  // tiles.
@@ -88,6 +90,9 @@ public final class PuzzleActivity extends Activity {
       super.onCreate(savedInstanceState);
       this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);//sets the orientation to portrait
       setContentView(R.layout.board);
+
+      mCounter = (TextView)findViewById(R.id.step);
+      mCounter.setText("0");
       
 	  // 实例化广告条
 	  //AdView adView = new AdView(this, AdSize.FIT_SCREEN);
@@ -421,5 +426,6 @@ public final class PuzzleActivity extends Activity {
 		   snd.play(soundfinished,0.8f,0.8f,0,0,1);
 	   }
    }
-   
+
+
 } 

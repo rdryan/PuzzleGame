@@ -52,8 +52,8 @@ public final class IntroActivity extends Activity implements OnClickListener{
       
 //      mMultiWindow = new SMultiWindow();
       
-	  // 初始化接口，应用启动的时候调用
-	  // 参数：appId, appSecret, 调试模式
+	  // ???????????????
+	  // ???appId, appSecret, ????
 	  //AdManager.getInstance(this).init("9fec3ba849266a59", "33798bb5602a4ee8", false);
 		 
    }

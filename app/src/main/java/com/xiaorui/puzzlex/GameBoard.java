@@ -368,10 +368,11 @@ private GameBoard(Context context,
          tv.setCurrentTile(theBlankTile);
          moveCount++;
    	     PuzzleActivity.playHitSound();
+         PuzzleActivity.mCounter.setText(String.valueOf(moveCount));
       }
       else
       {
-    	  PuzzleActivity.playErrorSound();
+    	  //PuzzleActivity.playErrorSound();
       }
 
       if (isCorrect()) {
