@@ -2,18 +2,18 @@
 <items version="2" >
 
     <item
-        jar="D:\program\Android\sdk\extras\android\m2repository\com\android\support\support-v4\19.1.0\support-v4-19.1.0.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67">
-        <dex dex="D:\workspace2\AndroidStudioProjects\PuzzleGame\app\build\intermediates\pre-dexed\debug\support-v4-19.1.0-1a244fdcc624e34072e92ab39d0467828e8ba43a.jar" />
-    </item>
-    <item
         jar="D:\workspace2\AndroidStudioProjects\PuzzleGame\app\libs\sdk-v1.0.0.jar"
         jumboMode="false"
         revision="22.0.1"
         sha1="e2ce3786b6e9519934c4a54aaaaf39525bf4486c">
         <dex dex="D:\workspace2\AndroidStudioProjects\PuzzleGame\app\build\intermediates\pre-dexed\debug\sdk-v1.0.0-d2fceb8b6ec41dce2c79a2f6dd05ad36d8934417.jar" />
+    </item>
+    <item
+        jar="D:\program\Android\sdk\extras\android\m2repository\com\android\support\support-v4\19.1.0\support-v4-19.1.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67">
+        <dex dex="D:\workspace2\AndroidStudioProjects\PuzzleGame\app\build\intermediates\pre-dexed\debug\support-v4-19.1.0-1a244fdcc624e34072e92ab39d0467828e8ba43a.jar" />
     </item>
 
 </items>

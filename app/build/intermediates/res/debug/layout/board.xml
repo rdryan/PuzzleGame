@@ -24,14 +24,14 @@
         android:textSize="20sp" />
 
 
-    <TextView android:id="@+id/time"
+    <Chronometer android:id="@+id/time"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:gravity="right"
-        android:text="@string/time"
         android:textColor="#ff7cff43"
         android:textStyle="bold"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        android:format="%h:%m:%s" />
 
 </LinearLayout>
 

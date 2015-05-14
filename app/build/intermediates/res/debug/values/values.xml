@@ -49,6 +49,6 @@ rdryan@sina.com\n
     <string name="show_numbers_summary">Display the correct location of the tiles</string>
     <string name="sound_effects">Sound Effects</string>
     <string name="sound_effects_summary">Turn On/Off sound effects</string>
-    <string name="step">step\n</string>
-    <string name="time">time\n</string>
+    <string name="step">step</string>
+    <string name="time">time</string>
 </resources>

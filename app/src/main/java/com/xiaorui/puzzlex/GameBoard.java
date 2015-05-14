@@ -27,6 +27,7 @@ import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.media.AudioManager;
 import android.media.SoundPool;
+import android.os.SystemClock;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.TableLayout;
@@ -369,6 +370,11 @@ private GameBoard(Context context,
          moveCount++;
    	     PuzzleActivity.playHitSound();
          PuzzleActivity.mCounter.setText(String.valueOf(moveCount));
+
+         if (moveCount == 1) {
+             PuzzleActivity.mChronometer.setBase(SystemClock.elapsedRealtime());
+             PuzzleActivity.mChronometer.start();
+         }
       }
       else
       {
@@ -377,7 +383,8 @@ private GameBoard(Context context,
 
       if (isCorrect()) {
     	 PuzzleActivity.playFinishSound();
-         ((Activity)context).showDialog(PuzzleActivity.DIALOG_COMPLETED_ID);
+         PuzzleActivity.mChronometer.stop();
+         ((Activity) context).showDialog(PuzzleActivity.DIALOG_COMPLETED_ID);
       }
    }
 
